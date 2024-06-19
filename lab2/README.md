@@ -1,3 +1,7 @@
 # Part1
 
-Calculating eigenvalues, eigenvectors using numpy.
+Trivial calculating eigenvalues, eigenvectors using numpy.
+
+# Part2
+Applying principal component analyses to images.
+![img.png](img.png)
