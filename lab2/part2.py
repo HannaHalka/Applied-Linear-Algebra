@@ -28,11 +28,11 @@ plt.title('Cumulative explained variance & Number of components')
 plt.grid(True)
 plt.show()
 
-series = plt.figure(figsize=(16, 6), dpi=100)
-part = series.subplots(2, 3, sharey=True, sharex=True)
+series = plt.figure(figsize=(16, 9), dpi=100)
+part = series.subplots(3, 3, sharey=True, sharex=True)
 
-percentage = 35
-for i in range(6):
+percentage = 15
+for i in range(9):
     num_components_i = np.argmax(cumulative_variance >= percentage/100) + 1
     pca_i = PCA(n_components=num_components_i)
     image_reduced = pca_i.fit_transform(image_flattened)
