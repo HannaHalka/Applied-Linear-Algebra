@@ -22,4 +22,5 @@ def decrypt_message(encrypted_vector, key_matrix):
 message = 'The quick brown fox jumps over the lazy dog'
 key_matrix = np.random.randint(0, 256, (len(message), len(message)))
 encrypted = encrypt_message(message, key_matrix)
+print(encrypted)
 print(decrypt_message(encrypted, key_matrix))
